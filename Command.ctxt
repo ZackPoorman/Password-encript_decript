@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Command
+comment0.text=\r\n\ \r\n
+comment1.params=c
+comment1.target=Command(java.lang.String)
+comment1.text=\r\n\ \r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ \r\n
+numComments=3

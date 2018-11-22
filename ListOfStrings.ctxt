@@ -1,0 +1,28 @@
+#BlueJ class context
+comment0.target=ListOfStrings
+comment0.text=\r\n\ A\ ListOfStrings\ encapsulates\ a\ list\ of\ Strings.\ It\ could\ be\ generalized\ for\ Objects.\r\n\ \r\n\ A\ ListOfStrings\ is\ created\ to\ have\ both\ a\ top\ dummy\ Node\ and\ a\ bottom\ dummy\ Node.\r\n\ Cursor\ is\ initialized\ to\ match\ the\ top\ field.\ \r\n\ \r\n\ The\ end\ field\ is\ always\ a\ reference\ to\ the\ bottom\ dummy\ Node.\r\n\ \r\n\ The\ convention\ that\ is\ implemented\ by\ this\ ListOfStrings\ structure\ goes\ as\ follows.\ \r\n\ For\ each\ value\ of\ the\ cursor\ field,\ \r\n\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cursor\r\n\ \r\n\ the\ data\ are\ stored\ in\ the\ next\ Node,\r\n\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cursor.next.data\r\n\ \r\n\ -----------------------------------------\r\n\ \ \ \ \ An\ empty\ list\r\n\ Below,\ cursor\ \=\ top,\ i.e.\ the\ cursor\ index\ is\ 0\r\n\ \r\n\ top.prev\ (cursor.next)\ \ \ null\r\n\ top.data\ (cursor.next)\ \ \ dummy\r\n\ top.next\ (cursor.next)\ \ \ link\ forward\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ end.prev\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ link\ backward\r\n\ end.data\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dummy\r\n\ end.next\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ null\r\n\ \r\n\ \r\n\ \r\n\ -----------------------------------------\r\n\ \ \ \ \ A\ list\ of\ 1\ element\r\n\ Below,\ cursor\ \=\ top,\ i.e.\ the\ cursor\ index\ is\ 0\r\n\ \r\n\ top.prev\ (cursor.next)\ \ \ null\r\n\ top.data\ (cursor.next)\ \ \ dummy\r\n\ top.next\ (cursor.next)\ \ \ link\ forward\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ cursor.next.prev\ \ \ \ \ \ \ \ \ links\ backward\r\n\ cursor.next.data\ \ \ \ \ \ \ \ \ "one"\r\n\ cursor.next.next\ \ \ \ \ \ \ \ \ link\ forward\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ end.prev\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ link\ backward\r\n\ end.data\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dummy\r\n\ end.next\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ null\r\n\ \r\n\ -------------------------------------------\r\n\ \ \ \ \ A\ list\ of\ 2\ elements\r\n\ Below,\ cursor\ \=\ top.next,\ i.e.\ the\ cursor\ index\ is\ 1\r\n\ \r\n\ top.prev\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ null\r\n\ top.data\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dummy\r\n\ top.next\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ link\ forward\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ cursor.prev\ \ \ \ \ \ \ \ \ \ \ \ \ \ link\ backward\r\n\ cursor.data\ \ \ \ \ \ \ \ \ \ \ \ \ \ "one"\r\n\ cursor.next\ \ \ \ \ \ \ \ \ \ \ \ \ \ link\ forward\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ cursor.next.prev\ \ \ \ \ \ \ \ \ link\ backward\r\n\ cursor.next.data\ \ \ \ \ \ \ \ \ "two"\r\n\ cursor.next.next\ \ \ \ \ \ \ \ \ link\ forward\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ end.prev\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ link\ backward\r\n\ end.data\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dummy\r\n\ end.next\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ null\r\n\ \r\n\ -------------------------------------------\r\n\ \r\n\ For\ the\ initial\ cursor\ value,\ an\ item\ will\ be\ entered\ in\ the\r\n\ 0th\ position\ in\ the\ list.\ Unless\ the\ cursor\ is\ changed,\ a\ \r\n\ subsequent\ item\ will\ be\ entered\ still\ in\ the\ 0th\ position,\ \r\n\ where\ each\ existing\ item\ in\ the\ list\ will\ be\ demoted\ by\ one\ place.\r\n\ \r\n
+comment1.params=
+comment1.target=ListOfStrings()
+comment1.text=\r\n\ Invokes\ the\ other\ constructor.\r\n
+comment2.params=title
+comment2.target=ListOfStrings(java.lang.String)
+comment2.text=\r\n\ Defers\ to\ the\ List\ constructor.\r\n
+comment3.params=title\ source
+comment3.target=ListOfStrings(java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ Defers\ to\ the\ List\ constructor,\ and\ populates\ the\ list\ with\ \r\n\ substrings\ of\ length\ 1.\r\n
+comment4.params=
+comment4.target=java.lang.String\ get()
+comment4.text=\r\n\ The\ get\ method\ returns\ the\ item,\ cursor.next.getData()\r\n
+comment5.params=index
+comment5.target=java.lang.String\ get(int)
+comment5.text=\r\n\ get\ moves\ the\ cursor\ to\ the\ specified\ index\ position,\ \r\n\ and\ then\ invokes\ get()\ to\ return\ the\ item.\r\n
+comment6.params=
+comment6.target=java.lang.String\ remove()
+comment6.text=\r\n\ Returns\ the\ value,\ curror.next.data,\ and\ re-links\ the\ list\ to\ exclude\r\n\ the\ node\ that\ contained\ the\ data.\ \ The\ value\ of\ cursor\ does\ not\ change\!\r\n\ \r\n\ @return\r\n\ @throws\ Exception\r\n
+comment7.params=index
+comment7.target=java.lang.String\ remove(int)
+comment7.text=\r\n\ First\ moves\ the\ cursor\ to\ the\ index\ specified\ location\ in\ the\ list,\r\n\ and\ then\ calls\ this.remove\ to\ remove\ and\ return\ the\ value.\r\n\ \r\n\ @return\r\n\ @throws\ Exception\r\n
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+comment8.text=\r\n\ \r\n\ \r\n
+numComments=9

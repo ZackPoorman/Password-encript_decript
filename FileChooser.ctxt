@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=FileChooser
+comment1.params=
+comment1.target=FileChooser()
+comment2.params=openOrSave\ fileName
+comment2.target=java.lang.String\ chooseFile(java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ Allows\ the\ user\ to\ select\ a\ text\ file\ from\ a\ file\ chooser.\r\n\ \r\n\ @return\ the\ absolute\ file\ name.\r\n
+comment3.params=
+comment3.target=void\ main()
+numComments=4

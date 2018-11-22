@@ -1,0 +1,32 @@
+#BlueJ class context
+comment0.target=Stack
+comment0.text=\ -----------------------------------------------------------------------\r\n\ \r\n\ Description\:\ \ An\ implementation\ of\ a\ stack\ as\ a\ linked\ structure.\r\n\ \r\n\ A\ stack\ is\ a\ structure\ with\ three\ methods\:\r\n\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ push,\ pop,\ and\ peek\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ As\ a\ linked\ implementation,\r\n\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.top.data\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ denotes\ the\ top\ item\ on\ the\ stack.\r\n\ \r\n\ <<<\ Examples\ >>>\r\n\ \r\n\ --------------\r\n\ An\ empty\ stack\r\n\ --------------\ \r\n\ this.title\ \=\=\ title\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Stack\ s\ \=\ new\ Stack(\ );\r\n\ this.top\ \=\=\ null\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ ----------------------------\r\n\ A\ stack\ that\ contains\ 1\ item\r\n\ ----------------------------\r\n\ this.title\ \=\=\ title\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ s.push(\ true\ );\r\n\ this.top.data\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ true\r\n\ this.top.next\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ null\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ -----------------------------\r\n\ A\ stack\ that\ contains\ 5\ items\ \r\n\ -----------------------------\ \r\n\ this.title\ \=\=\ title\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ s.push(\ true\ );\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ s.push(\ 1\ );\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ s.push(\ 3.14\ );\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ s.push(\ "one"\ );\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ s.push(\ "two"\ );\r\n\ this.top.data\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "two"\r\n\ this.top.next\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ link\ forward\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ this.top.next.data\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "one"\r\n\ this.top.next.next\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ null\r\n\ \r\n\ this.top.next.next.data\ \ \ \ \ \ \ \ \ \ \ \ \ \ 3.14\r\n\ this.top.next.next.next\ \ \ \ \ \ \ \ \ \ \ \ \ \ link\ forward\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ this.top.next.next.next.data\ \ \ \ \ \ \ \ \ 1\r\n\ this.top.next.next.next.next\ \ \ \ \ \ \ \ \ link\ forward\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ this.top.next.next.next.next.data\ \ \ \ true\r\n\ this.top.next.next.next.next.next\ \ \ \ null\r\n\ \r\n\ ----------------------------------------------\ \ \ ----------------------------\r\n
+comment1.params=
+comment1.target=Stack()
+comment10.params=args
+comment10.target=void\ main(java.lang.String[])
+comment10.text=\ ---------------------------------------------------------------------\r\n\ \r\n\ @param\ args\r\n
+comment2.params=title
+comment2.target=Stack(java.lang.String)
+comment2.text=\r\n\ Constructs\ the\ stack;\r\n
+comment3.params=title
+comment3.target=void\ setTitle(java.lang.String)
+comment4.params=obj
+comment4.target=void\ push(java.lang.Object)
+comment4.text=\ ---------------------------------------------------------------------\r\n\ The\ push\ method\ creates\ a\ new\ node,\ the\ reference\ to\ which\ is\ \r\n\ assigned\ to\ this.top.\r\n\ ----------------------------------------------------------------------\r\n\ \r\n\ @param\ obj\r\n
+comment5.params=
+comment5.target=java.lang.Object\ pop()
+comment5.text=\ ---------------------------------------------------------------------\r\n\ Given\ that\ this.top\ is\ not\ null,\ the\ "pop"\ method\ returns\ the\ \r\n\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.top.data\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ value.\ Pop\ \r\n\ \ 1)\ first\ saves\ the\ value\ to\ return\ in\ a\ local\ variable,\r\n\ \ 2)\ changes\ the\ this.top\ reference\ to\ link\ around\ the\ no\ longer\r\n\ \ \ \ \ top\ node,\r\n\ \ 3)\ returns\ the\ value\r\n\ \ --------------------------------------------------------------------\r\n\ \r\n\ @return\r\n
+comment6.params=
+comment6.target=java.lang.Object\ peek()
+comment6.text=\ ---------------------------------------------------------------------\r\n\ \r\n\ @return\r\n
+comment7.params=
+comment7.target=int\ size()
+comment7.text=\ ---------------------------------------------------------------------\r\n\ \r\n\ @return\r\n
+comment8.params=
+comment8.target=boolean\ isEmpty()
+comment8.text=\ ---------------------------------------------------------------------\r\n\ \r\n\ @return\r\n
+comment9.params=
+comment9.target=java.lang.String\ toString()
+comment9.text=\ ---------------------------------------------------------------------\r\n\ \r\n\ @return\r\n
+numComments=11

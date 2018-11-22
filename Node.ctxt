@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Node
+comment1.params=
+comment1.target=Node()
+comment1.text=\r\n\ This\ constructor\ could\ be\ used\ for\ doubly-linked\ structures,\r\n\ e.g.,\ doubly-linked\ lists.\r\n\ \r\n\ This\ node\ constructor\ defers\ execution\ to\ the\ parameter\ match\ construcotr\r\n
+comment2.params=data\ prev\ next
+comment2.target=Node(java.lang.Object,\ Node,\ Node)
+comment2.text=\r\n\ This\ constructor\ could\ be\ used\ for\ doubly-linked\ structures,\r\n\ e.g.,\ doubly-linked\ lists.\r\n
+comment3.params=data\ next
+comment3.target=Node(java.lang.Object,\ Node)
+comment3.text=\r\n\ This\ constructor\ could\ be\ used\ for\ singly-linked\ structures,\r\n\ e.g.,\ a\ stack\ structure.\r\n
+comment4.params=obj
+comment4.target=boolean\ equals(java.lang.Object)
+comment4.text=\r\n\ This\ equals\ method\ compares\ the\ data\ referenced\ in\ this\ Node\r\n\ with\ the\ Object\ parameter\ for\ equality.\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7
